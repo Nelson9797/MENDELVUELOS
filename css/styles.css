@@ -11,7 +11,8 @@ footer {
   }
   
   .iconos a {
-    margin-right: 30px;
+    margin-right: 2px;
+    margin-left: 30px;
   }
   
   .contacto {
@@ -32,6 +33,26 @@ footer {
 p {
     margin: 0;
 }
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+  .iconos {
+    display: flex; /* Utiliza flexbox para alinear los íconos en una fila */
+    justify-content: space-around; /* Distribuye los íconos de manera uniforme */
+    margin-right: 0; /* Quita el margen derecho para alinear los íconos */
+  }
+
+  .iconos a {
+    margin-right: 5px; /* Espacio entre los íconos */
+    margin-left: 5px;
+    width: 30px; /* Ancho de cada ícono */
+    text-align: center; /* Alineación del contenido del ícono */
+  }
+
+  .icono-central {
+    margin: 0 auto; /* Centra el ícono central */
+  }
+}
+
 
 /* Estilo para los botones de menú desplegable  para desplegar al pasar el mouse agregado por mi el 24/10/2023 */
 .nav-item.dropdown:hover .dropdown-menu {
