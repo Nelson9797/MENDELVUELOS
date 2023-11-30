@@ -1,0 +1,274 @@
+/*Para mejorar la vista de la piecera la parte de abajo para que se vea presentable*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .iconos {
+    margin-right: 30px;
+  }
+  
+  .iconos a {
+    margin-right: 30px;
+  }
+  
+  .contacto {
+    margin-left: 30px;
+    text-align: left;
+  }
+  
+
+.linea {
+    background-color: #181414;
+    height: 2px;
+}
+
+.contenido-piecera {
+    padding: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+/* Estilo para los botones de menú desplegable  para desplegar al pasar el mouse agregado por mi el 24/10/2023 */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Alinea los elementos a la derecha de la cabecera */
+#navbar-main {
+  margin-left: auto;
+  margin-right: 100px;
+}
+/* Media queries para pantallas de celular */
+@media (max-width: 767px) {
+  #navbar-main {
+    margin-left: 20px; /* Por ejemplo, un margen izquierdo mayor */
+    margin-right: 20px; /* Un margen derecho más pequeño */
+  }
+}
+
+/*poner imagen de fondo a mi aplicación web*/
+body.indexvuelos {
+    background-image: url('/images/fondonode.jpeg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-attachment: fixed; /* Opcional: fija la imagen de fondo */
+}
+
+/* Lo que sigue es para dar forma bonito al formulario*/
+/* Estilos de formulario para pantallas grandes */
+.formulario {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 100px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.enviar-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.enviar-link:hover {
+  background-color: #0056b3;
+}
+
+.campo-form {
+  margin-right: 20px; /* Ajusta este valor para cambiar el espaciado entre los campos */
+}
+
+/* Estilos del formulario para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .fila {
+      flex-direction: column;
+  }
+  .formulario {
+    max-width: 335px;
+    margin: 20px auto;
+    padding: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  label {
+      width: auto;
+      margin-bottom: 5px; /* Ajusta el espaciado entre etiquetas en dispositivos móviles */
+      padding: 10px;
+  }
+  input[type="text"],
+  input[type="date"],
+  select {
+      width: 80%;
+      margin-bottom: 10px; /* Ajusta el espaciado entre campos en dispositivos móviles */
+      padding: 10px;
+  }
+}
+
+
+/*Modificar el tamaño de los iconos facebook, instagram y Whatsapp para que se vena tamaño de un icono*/
+.iconos img {
+    width: 30px; /* Establecer el ancho deseado */
+    height: 30px; /* Establecer la altura deseada */
+    margin-right: 1px; /* Agregar un margen entre los íconos si es necesario */
+}
+
+/*Código de alojamiento para mostrar que se vea bonito los cuadros de alojamiento*/
+.center-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .container {
+    width: 70%;
+    text-align: 30px;
+  }
+  
+  .box {
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  /*Para mejorar la parte de movilidad como taxi de los pasajeros*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .taxi-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .taxi-list li {
+    margin-bottom: 10px;
+  }
+  
+  .taxi-list li a {
+    text-decoration: none;
+    color: #0077c8;
+    display: block;
+    padding: 10px;
+    border: 1px solid #0077c8;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .taxi-list li a:hover {
+    background-color: #0077c8;
+    color: #fff;
+  }
+
+/*codigo para index para que se vea presentable la parte de imagenes eso de Misti, amazonas y machupichu*/
+/*Primero para pantalla de computadora*/
+.custom-container {
+  width: 82%;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.custom-filaco {
+  width: 100%;
+}
+
+.custom-filaco td {
+  text-align: center;
+  vertical-align: top;
+}
+
+.custom-filaco img {
+  width: 350px;
+  height: 230px;
+  border-radius: 15px;
+}
+
+.custom-filaco figcaption {
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Media queries para pantallas de celular */
+@media (max-width: 767px) {
+  .custom-filaco {
+      display: block;
+  }
+
+  .custom-filaco td {
+      width: 100%;
+      display: block;
+  }
+
+  .custom-filaco img {
+      width: 100%;
+  }
+  .custom-filaco figcaption {
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

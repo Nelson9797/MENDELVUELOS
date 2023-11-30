@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <title>Vuelos Mendel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fecha_ida, #fecha_vuelta').datepicker({
+                format: 'yyyy-mm-dd', // Puedes cambiar el formato de la fecha si lo necesitas
+                autoclose: true
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="/js/script.js"></script>
+</head>
+<body class="indexvuelos">
+    <!-- Cabecera con Bootstrap y fondo azul -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo.png" style="height: 50px; width: 50px; margin-left: 40px; border-radius: 30px;">
+        </a>
+        <span class="navbar-text">
+            Bienvenido a Vuelos Mendel
+        </span>
+        <button class="navbar-toggler" style="margin-right: 10px;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navbar-main" class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html"><strong>Vuelos</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/alojamiento.html"><strong>Alojamiento</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/movilidad.html"><strong>Movilidad</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nosotros.html"><strong>Nosotros</strong></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="hamburguesaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hamburguesaDropdown">
+                        <a class="dropdown-item" href="#">Motivación</a>
+                        <a class="dropdown-item" href="#">Misión</a>
+                        <a class="dropdown-item" href="#">Visión</a>
+                        <a class="dropdown-item" href="#">Mi perfil</a>
+                        <a class="dropdown-item" href="#">Registro</a>
+                        <a class="dropdown-item" href="#">Salir</a>
+                    </div>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- Tu contenido aquí -->
+<h2><center><strong>Cotice su vuelo</strong></center></h2>
+<form action="/submit_flight_info" method="post" class="formulario" onsubmit="enviarWhatsApp(event); return false;">
+    <div class="fila">
+        <div class="tipo-vuelo-options">
+            <input type="radio" id="solo_ida" name="tipo_vuelo" value="solo ida" checked>
+            <label for="solo_ida">Solo Ida</label>
+            
+            <input type="radio" id="ida_vuelta" name="tipo_vuelo" value="ida y vuelta">
+            <label for="ida_vuelta">Ida y Vuelta</label>
+        </div>
+    </div>
+    
+    <div class="fila">
+        <input type="text" id="origen" name="origen" class="campo-form marca-agua" placeholder="Origen" data-placeholder="Origen">
+        <input type="text" id="destino" name="destino" class="campo-form marca-agua" placeholder="Destino" data-placeholder="Destino">
+        <input type="text" id="fecha_ida" name="fecha_ida" class="campo-form marca-agua" placeholder="Fecha de Ida" data-placeholder="Fecha de Ida">
+        <input type="text" id="fecha_vuelta" name="fecha_vuelta" class="campo-form marca-agua" placeholder="Fecha de Vuelta" data-placeholder="Fecha de Vuelta">
+
+        
+        <button type="submit" class="enviar-link">Enviar</button>
+    </div>
+</form>
+
+
+<div class="custom-container">
+    <table class="custom-filaco">
+        <tr>
+            <td>
+                <figure>
+                    <img src="/images/machupichu.jpeg" alt="Imagen 1">
+                    <figcaption>Machu Picchu, ciudad antigua en montañas, misteriosa, construcciones únicas, legado cultural, impresionante paisaje, patrimonio mundial.
+                    </figcaption>
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="/images/amazonas.jpeg" alt="Imagen 2">
+                    <figcaption>Río Amazonas, caudaloso río suramericano, vida exuberante, diversidad única, pulmón verde, vital para ecosistemas y comunidades.
+                    </figcaption>
+                </figure>
+            </td>
+            <td>
+                <figure>
+                    <img src="/images/volcanmisto.jpeg" alt="Imagen 3">
+                    <figcaption>Volcán Misti, elevado volcán en Perú, majestuoso, icono de Arequipa, cumbre nevada, historia geológica imponente.</figcaption>
+                </figure>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+<hr style="margin-top: 25px; color: black; border-width: 2px;">
+<footer>
+    <div class="iconos">
+      <a href="https://www.facebook.com/profile.php?id=100087781911172" target="_blank">
+        <img src="/images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/vuelosmendelperu/" target="_blank">
+        <img src="/images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/+51994679560?text=Hola deseo una contización" target="_blank">
+        <img src="/images/whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+  
+    <div class="contacto">
+      <p>&copy; 2023 Buscador de Vuelos Mendel Perú</p>
+      <p>Número de Whatsapp: 994679560 - 928658556 - 991093018</p> 
+    </div>
+  </footer>

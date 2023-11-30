@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="/js/script.js"></script>
+</head>
+<body class="univ-background">
+    <!-- Cabecera con Bootstrap y fondo azul -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="index.html" onclick="goToIndex()">
+            <img src="/images/logo.png" style="height: 50px; width: 50px; margin-left: 40px; border-radius: 30px;">
+        </a>
+        <span class="navbar-text">
+             Bienvenido a Vuelos Mendel
+         </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navbar-main" class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html"><strong>Vuelos</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/alojamiento.html"><strong>Alojamiento</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/movilidad.html"><strong>Movilidad</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nosotros.html"><strong>Nosotros</strong></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="hamburguesaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hamburguesaDropdown">
+                        <a class="dropdown-item" href="#">Motivación</a>
+                        <a class="dropdown-item" href="#">Misión</a>
+                        <a class="dropdown-item" href="#">Visión</a>
+                        <a class="dropdown-item" href="#">Mi perfil</a>
+                        <a class="dropdown-item" href="#">Registro</a>
+                        <a class="dropdown-item" href="#">Salir</a>
+                    </div>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <h1>Servicios de Taxi</h1>
+  
+  <div class="content">
+    <h2>Aplicaciones de Taxi:</h2>
+    <ul class="taxi-list">
+      <li><a href="https://indrive.com/es/home/" target="_blank">Indrive</a></li>
+      <li><a href="https://www.lyft.com/" target="_blank">Lyft</a></li>
+      <li><a href="https://cabify.com/" target="_blank">Cabify</a></li>
+      <!-- Agrega más enlaces a otras aplicaciones de taxi aquí -->
+    </ul>
+
+    <h2>Compañías de Taxi Locales:</h2>
+    <ul class="taxi-list">
+      <li><a href="https://www.ejemplotaxipiura.com/" target="_blank">Ejemplo Taxi Piura</a></li>
+      <li><a href="https://www.otrataxicompany.com/" target="_blank">Otra Taxi Company</a></li>
+      <!-- Agrega más enlaces a compañías de taxi locales aquí -->
+    </ul>
+  </div>
+</body>
+</html>
