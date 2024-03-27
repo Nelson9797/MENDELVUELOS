@@ -59,6 +59,6 @@ function enviarWhatsApp(event) {
         mensaje += "\nFecha Vuelta: " + fechaVuelta.value;
     }
 
-    let url = "https://wa.me/+51991093018?text=" + encodeURIComponent(mensaje);
+    let url = "https://wa.me/+51994679560?text=" + encodeURIComponent(mensaje);
     window.open(url);
 }

@@ -181,6 +181,7 @@ select {
   .container {
     width: 70%;
     text-align: 30px;
+    text-align: center;
   }
   
   .box {
